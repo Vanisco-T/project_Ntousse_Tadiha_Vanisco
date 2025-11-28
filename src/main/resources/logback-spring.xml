@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <property name="LOG_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"/>
+
+    <property name="VIREMENT_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss.SSS} | %msg%n"/>
+
+    <appender name="FILE-APPENDER" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>logs/bank-app.log</file>
+        <encoder>
+            <pattern>${LOG_PATTERN}</pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>logs/bank-app-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <maxFileSize>10MB</maxFileSize>
+            <maxHistory>30</maxHistory>
+            <totalSizeCap>1GB</totalSizeCap>
+        </rollingPolicy>
+    </appender>
+
+    <appender name="VIREMENT-FILE-APPENDER" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>logs/virements.log</file>
+        <encoder>
+            <pattern>${VIREMENT_PATTERN}</pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>logs/virements-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <maxFileSize>10MB</maxFileSize>
+            <maxHistory>30</maxHistory>
+            <totalSizeCap>500MB</totalSizeCap>
+        </rollingPolicy>
+    </appender>
+
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>${LOG_PATTERN}</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Logger spécifique pour les virements - NE PAS PROPAGER vers les appenders parents -->
+    <logger name="virement-log" level="INFO" additivity="false">
+        <appender-ref ref="VIREMENT-FILE-APPENDER" />
+        <!-- Optionnel : aussi dans la console pour le dev -->
+        <appender-ref ref="CONSOLE" />
+    </logger>
+
+    <!-- Logger racine pour tous les autres logs -->
+    <root level="INFO">
+        <appender-ref ref="FILE-APPENDER" />
+        <appender-ref ref="CONSOLE" />
+    </root>
+
+</configuration>
