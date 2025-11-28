@@ -87,6 +87,9 @@ org.formation.projet_ntousse_tadiha_vanisco/
 2. Messages d'erreur clairs en français
 3. Codes HTTP appropriés
 
+## Les Endpoint
+- vous allez trouver tous les endpoints documenter sur le lien lorsque application est lancer: [http://localhost:8080/swagger-ui/index.html/](http://localhost:8080/swagger-ui/index.html/) 
+
 
 
 

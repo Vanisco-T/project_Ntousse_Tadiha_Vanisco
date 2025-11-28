@@ -201,3 +201,115 @@
 2025-11-28 16:39:51.466 [restartedMain] INFO  o.f.p.ProjetNtousseTadihaVaniscoApplication - Started ProjetNtousseTadihaVaniscoApplication in 2.085 seconds (process running for 2.695)
 2025-11-28 16:40:04.785 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2025-11-28 16:40:04.817 [http-nio-8080-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/comptes/1/200.]
+2025-11-28 16:55:43.189 [SpringApplicationShutdownHook] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-11-28 16:55:43.190 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-11-28 16:55:43.191 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-11-28 16:55:45.238 [restartedMain] INFO  o.f.p.ProjetNtousseTadihaVaniscoApplication - Starting ProjetNtousseTadihaVaniscoApplication using Java 23.0.2 with PID 328549 (/home/vanisco/IdeaProjects/projet_Ntousse_tadiha_vanisco/target/classes started by vanisco in /home/vanisco/IdeaProjects/projet_Ntousse_tadiha_vanisco)
+2025-11-28 16:55:45.239 [restartedMain] INFO  o.f.p.ProjetNtousseTadihaVaniscoApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-28 16:55:45.794 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-28 16:55:45.795 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-28 16:55:45.795 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-11-28 16:55:45.811 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-28 16:55:46.058 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-28 16:55:46.136 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:bankdb user=SA
+2025-11-28 16:55:46.137 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-28 16:55:46.147 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-28 16:55:46.852 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-28 16:55:47.048 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-11-28 16:55:47.057 [restartedMain] INFO  o.f.p.ProjetNtousseTadihaVaniscoApplication - Started ProjetNtousseTadihaVaniscoApplication in 2.095 seconds (process running for 2.509)
+2025-11-28 16:56:12.007 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-28 16:56:12.097 [http-nio-8080-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2025-11-28 16:59:01.694 [tomcat-shutdown] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2025-11-28 16:59:01.696 [Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2025-11-28 16:59:01.710 [Thread-5] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-11-28 16:59:01.711 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-11-28 16:59:01.712 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-11-28 16:59:35.429 [restartedMain] INFO  o.f.p.ProjetNtousseTadihaVaniscoApplication - Starting ProjetNtousseTadihaVaniscoApplication using Java 23.0.2 with PID 328549 (/home/vanisco/IdeaProjects/projet_Ntousse_tadiha_vanisco/target/classes started by vanisco in /home/vanisco/IdeaProjects/projet_Ntousse_tadiha_vanisco)
+2025-11-28 16:59:35.429 [restartedMain] INFO  o.f.p.ProjetNtousseTadihaVaniscoApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-28 16:59:35.785 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-28 16:59:35.786 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-11-28 16:59:35.791 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-28 16:59:35.942 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+2025-11-28 16:59:35.958 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection conn30: url=jdbc:h2:mem:bankdb user=SA
+2025-11-28 16:59:35.960 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+2025-11-28 16:59:35.967 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-28 16:59:37.425 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-28 16:59:37.861 [restartedMain] INFO  o.f.p.ProjetNtousseTadihaVaniscoApplication - Started ProjetNtousseTadihaVaniscoApplication in 2.479 seconds (process running for 233.312)
+2025-11-28 16:59:39.244 [Thread-16] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-11-28 16:59:39.245 [Thread-16] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+2025-11-28 16:59:39.245 [Thread-16] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+2025-11-28 16:59:39.303 [restartedMain] INFO  o.f.p.ProjetNtousseTadihaVaniscoApplication - Starting ProjetNtousseTadihaVaniscoApplication using Java 23.0.2 with PID 328549 (/home/vanisco/IdeaProjects/projet_Ntousse_tadiha_vanisco/target/classes started by vanisco in /home/vanisco/IdeaProjects/projet_Ntousse_tadiha_vanisco)
+2025-11-28 16:59:39.303 [restartedMain] INFO  o.f.p.ProjetNtousseTadihaVaniscoApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-28 16:59:39.388 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-28 16:59:39.388 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-11-28 16:59:39.391 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-28 16:59:39.411 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
+2025-11-28 16:59:39.412 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Added connection conn40: url=jdbc:h2:mem:bankdb user=SA
+2025-11-28 16:59:39.413 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
+2025-11-28 16:59:39.413 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-28 16:59:39.512 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-28 16:59:39.558 [restartedMain] INFO  o.f.p.ProjetNtousseTadihaVaniscoApplication - Started ProjetNtousseTadihaVaniscoApplication in 0.273 seconds (process running for 235.01)
+2025-11-28 17:01:20.093 [Thread-20] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-11-28 17:01:20.093 [Thread-20] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown initiated...
+2025-11-28 17:01:20.094 [Thread-20] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown completed.
+2025-11-28 17:01:20.176 [restartedMain] INFO  o.f.p.ProjetNtousseTadihaVaniscoApplication - Starting ProjetNtousseTadihaVaniscoApplication using Java 23.0.2 with PID 328549 (/home/vanisco/IdeaProjects/projet_Ntousse_tadiha_vanisco/target/classes started by vanisco in /home/vanisco/IdeaProjects/projet_Ntousse_tadiha_vanisco)
+2025-11-28 17:01:20.176 [restartedMain] INFO  o.f.p.ProjetNtousseTadihaVaniscoApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-28 17:01:20.272 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-28 17:01:20.272 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-11-28 17:01:20.275 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-28 17:01:20.295 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Starting...
+2025-11-28 17:01:20.297 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-6 - Added connection conn50: url=jdbc:h2:mem:bankdb user=SA
+2025-11-28 17:01:20.297 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Start completed.
+2025-11-28 17:01:20.297 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-28 17:01:20.405 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-28 17:01:20.459 [restartedMain] INFO  o.f.p.ProjetNtousseTadihaVaniscoApplication - Started ProjetNtousseTadihaVaniscoApplication in 0.307 seconds (process running for 335.91)
+2025-11-28 17:03:06.991 [Thread-24] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-11-28 17:03:06.991 [Thread-24] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown initiated...
+2025-11-28 17:03:06.992 [Thread-24] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown completed.
+2025-11-28 17:03:07.064 [restartedMain] INFO  o.f.p.ProjetNtousseTadihaVaniscoApplication - Starting ProjetNtousseTadihaVaniscoApplication using Java 23.0.2 with PID 328549 (/home/vanisco/IdeaProjects/projet_Ntousse_tadiha_vanisco/target/classes started by vanisco in /home/vanisco/IdeaProjects/projet_Ntousse_tadiha_vanisco)
+2025-11-28 17:03:07.064 [restartedMain] INFO  o.f.p.ProjetNtousseTadihaVaniscoApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-28 17:03:07.157 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-28 17:03:07.157 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-11-28 17:03:07.160 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-28 17:03:07.178 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Starting...
+2025-11-28 17:03:07.180 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-7 - Added connection conn60: url=jdbc:h2:mem:bankdb user=SA
+2025-11-28 17:03:07.180 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Start completed.
+2025-11-28 17:03:07.180 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-28 17:03:07.274 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-28 17:03:07.320 [restartedMain] INFO  o.f.p.ProjetNtousseTadihaVaniscoApplication - Started ProjetNtousseTadihaVaniscoApplication in 0.272 seconds (process running for 442.772)
+2025-11-28 17:03:45.773 [Thread-28] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-11-28 17:03:45.773 [Thread-28] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown initiated...
+2025-11-28 17:03:45.774 [Thread-28] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown completed.
+2025-11-28 17:03:45.827 [restartedMain] INFO  o.f.p.ProjetNtousseTadihaVaniscoApplication - Starting ProjetNtousseTadihaVaniscoApplication using Java 23.0.2 with PID 328549 (/home/vanisco/IdeaProjects/projet_Ntousse_tadiha_vanisco/target/classes started by vanisco in /home/vanisco/IdeaProjects/projet_Ntousse_tadiha_vanisco)
+2025-11-28 17:03:45.827 [restartedMain] INFO  o.f.p.ProjetNtousseTadihaVaniscoApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-28 17:03:45.908 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-28 17:03:45.908 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-11-28 17:03:45.910 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-28 17:03:45.928 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Starting...
+2025-11-28 17:03:45.929 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-8 - Added connection conn70: url=jdbc:h2:mem:bankdb user=SA
+2025-11-28 17:03:45.929 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Start completed.
+2025-11-28 17:03:45.929 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-28 17:03:46.008 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-28 17:03:46.052 [restartedMain] INFO  o.f.p.ProjetNtousseTadihaVaniscoApplication - Started ProjetNtousseTadihaVaniscoApplication in 0.241 seconds (process running for 481.503)
+2025-11-28 17:05:12.221 [SpringApplicationShutdownHook] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-11-28 17:05:12.221 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Shutdown initiated...
+2025-11-28 17:05:12.222 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Shutdown completed.
+2025-11-28 17:05:14.758 [restartedMain] INFO  o.f.p.ProjetNtousseTadihaVaniscoApplication - Starting ProjetNtousseTadihaVaniscoApplication using Java 23.0.2 with PID 331173 (/home/vanisco/IdeaProjects/projet_Ntousse_tadiha_vanisco/target/classes started by vanisco in /home/vanisco/IdeaProjects/projet_Ntousse_tadiha_vanisco)
+2025-11-28 17:05:14.759 [restartedMain] INFO  o.f.p.ProjetNtousseTadihaVaniscoApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-28 17:05:15.405 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-28 17:05:15.405 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-28 17:05:15.406 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-11-28 17:05:15.423 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-28 17:05:15.647 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-28 17:05:15.727 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:bankdb user=SA
+2025-11-28 17:05:15.728 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-28 17:05:15.739 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-28 17:05:16.401 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-28 17:05:16.625 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-11-28 17:05:16.636 [restartedMain] INFO  o.f.p.ProjetNtousseTadihaVaniscoApplication - Started ProjetNtousseTadihaVaniscoApplication in 2.123 seconds (process running for 2.466)
+2025-11-28 17:05:23.885 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-28 17:05:23.923 [http-nio-8080-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource .]
+2025-11-28 17:05:23.979 [http-nio-8080-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-11-28 17:05:43.166 [http-nio-8080-exec-2] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 228 ms
+2025-11-28 17:06:13.808 [http-nio-8080-exec-3] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api-docs.]
+2025-11-28 17:06:13.848 [http-nio-8080-exec-4] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
