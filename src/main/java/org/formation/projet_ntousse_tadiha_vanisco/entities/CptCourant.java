@@ -2,21 +2,20 @@ package org.formation.projet_ntousse_tadiha_vanisco.entities;
 
 
 import jakarta.persistence.Entity;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
 
 @Entity
-@Data
-@EqualsAndHashCode(callSuper = true)
 public class CptCourant extends Compte {
     private Double decouvertMax = 1000.0;
 
+    public Double getDecouvertMax() { return decouvertMax; }
+    public void setDecouvertMax(Double decouvertMax) { this.decouvertMax = decouvertMax; }
+
     @Override
     public boolean peutDebiter(Double montant) {
-        return (getSolde() - montant) >= -decouvertMax;
+        return (this.getSolde() - montant) >= -decouvertMax;
     }
 
     public boolean checkDecouvert() {
-        return getSolde() < 0;
+        return this.getSolde() < 0;
     }
 }

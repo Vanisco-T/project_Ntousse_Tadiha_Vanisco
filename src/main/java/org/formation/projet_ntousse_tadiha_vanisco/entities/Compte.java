@@ -1,12 +1,11 @@
 package org.formation.projet_ntousse_tadiha_vanisco.entities;
 
+
 import jakarta.persistence.*;
-import lombok.Data;
 import java.time.LocalDateTime;
 
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
-@Data
 public abstract class Compte {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -20,6 +19,18 @@ public abstract class Compte {
 
     @Column(nullable = false)
     private LocalDateTime dateOuverture;
+
+    public Long getId() { return id; }
+    public void setId(Long id) { this.id = id; }
+
+    public String getNumero() { return numero; }
+    public void setNumero(String numero) { this.numero = numero; }
+
+    public Double getSolde() { return solde; }
+    public void setSolde(Double solde) { this.solde = solde; }
+
+    public LocalDateTime getDateOuverture() { return dateOuverture; }
+    public void setDateOuverture(LocalDateTime dateOuverture) { this.dateOuverture = dateOuverture; }
 
     @PrePersist
     protected void onCreate() {
