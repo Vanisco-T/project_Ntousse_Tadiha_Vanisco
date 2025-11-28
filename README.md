@@ -34,7 +34,7 @@ Chaque issue créée dans ce dépôt correspond à une de ces user stories et pe
 - **Backend** : Spring Boot, JPA/Hibernate
 - **REST API** : CRUD clients, comptes, opérations bancaires
 - **AOP Logging** : suivi des virements internes dans le fichier logs/virements.log
-- **Tests unitaires** : validation des services critiques
+- **Tests unitaires** : validation des services critiques - partiellement implementer
 - **Documentation** : Swagger/OpenAPI 
 
 ---
