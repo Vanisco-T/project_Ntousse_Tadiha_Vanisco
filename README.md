@@ -38,59 +38,7 @@ Chaque issue créée dans ce dépôt correspond à une de ces user stories et pe
 ---
 
 ## Diagram de classe
+![UML Diagram](diagram_de_classe.png)
 
-classDiagram
-class Conseiller {
-String idConseiller
-String nom
-String prenom
-List<Client> clients
-
-        +ajouterClient(c : Client)
-        +supprimerClient(c : Client)
-        +modifierClient(c : Client)
-        +consulterClient(id : String)
-        +faireAudit()
-    }
-
-    class Client {
-        String idClient
-        String nom
-        String prenom
-        String adresse
-        String codePostal
-        String ville
-        String telephone
-        CptCourant courant
-        CptEpargne epargne
-        
-        +getComptes()
-        +supprimerComptes()
-    }
-
-    class Compte {
-        String numero
-        Double solde
-        Date dateOuverture
-        
-        +crediter(montant : Double)
-        +debiter(montant : Double)
-        +virement(montant : Double, c : Compte)
-    }
-
-    class CptCourant {
-        Double decouvertMax = 1000
-        +checkDecouvert()
-    }
-
-    class CptEpargne {
-        Double taux = 0.03
-        +calculInterets()
-    }
-
-    Conseiller "1" --> "0..10" Client : gère
-    Client "1" --> "0..2" Compte : possède
-    Compte <|-- CptCourant
-    Compte <|-- CptEpargne
-
+---
 
